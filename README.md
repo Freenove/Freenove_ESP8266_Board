@@ -1,4 +1,4 @@
-## Freenove_ESP8266_Development_Board
+## Freenove_ESP8266_Board
 
 A kit with a Freenove® ESP8266 Board for learning programming and electronics.
 
