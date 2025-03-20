@@ -89,7 +89,7 @@ You can click the corresponding button to control the LED on and off.
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_30.1_Control_LED_through_Web/Sketch_30.1_Control_LED_through_Web.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_05.1_Control_LED_through_Web/Sketch_05.1_Control_LED_through_Web.ino
     :linenos: 
     :language: c
     :lines: 1-115
@@ -97,7 +97,7 @@ The following is the program code:
 
 Include the WiFi Library header file of ESP8266.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_30.1_Control_LED_through_Web/Sketch_30.1_Control_LED_through_Web.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_05.1_Control_LED_through_Web/Sketch_05.1_Control_LED_through_Web.ino
     :linenos: 
     :language: c
     :lines: 7-7
@@ -105,7 +105,7 @@ Include the WiFi Library header file of ESP8266.
 
 Enter correct router name and password.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_30.1_Control_LED_through_Web/Sketch_30.1_Control_LED_through_Web.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_05.1_Control_LED_through_Web/Sketch_05.1_Control_LED_through_Web.ino
     :linenos: 
     :language: c
     :lines: 9-10
@@ -113,7 +113,7 @@ Enter correct router name and password.
 
 Set ESP8266 in Station mode and connect it to your router.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_30.1_Control_LED_through_Web/Sketch_30.1_Control_LED_through_Web.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_05.1_Control_LED_through_Web/Sketch_05.1_Control_LED_through_Web.ino
     :linenos: 
     :language: c
     :lines: 35-35
@@ -121,7 +121,7 @@ Set ESP8266 in Station mode and connect it to your router.
 
 Check whether ESP8266 has connected to router successfully every 0.5s.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_30.1_Control_LED_through_Web/Sketch_30.1_Control_LED_through_Web.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_05.1_Control_LED_through_Web/Sketch_05.1_Control_LED_through_Web.ino
     :linenos: 
     :language: c
     :lines: 36-39
@@ -129,7 +129,7 @@ Check whether ESP8266 has connected to router successfully every 0.5s.
 
 Serial monitor prints out the IP address assigned to ESP8266.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_30.1_Control_LED_through_Web/Sketch_30.1_Control_LED_through_Web.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_05.1_Control_LED_through_Web/Sketch_05.1_Control_LED_through_Web.ino
     :linenos: 
     :language: c
     :lines: 44-44
@@ -137,7 +137,7 @@ Serial monitor prints out the IP address assigned to ESP8266.
 
 Click the button on the web page to control the LED light on and off.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_30.1_Control_LED_through_Web/Sketch_30.1_Control_LED_through_Web.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_05.1_Control_LED_through_Web/Sketch_05.1_Control_LED_through_Web.ino
     :linenos: 
     :language: c
     :lines: 71-79

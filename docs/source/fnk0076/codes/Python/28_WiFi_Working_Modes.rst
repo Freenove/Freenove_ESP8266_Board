@@ -47,9 +47,9 @@ Connect Freenove ESP8266 to the computer using the USB cable.
 Code
 ========================
 
-Move the program folder “Freenove_Ultimate_Starter_Kit_for_ESP8266/Python/Python_Codes” to disk(D) in advance with the path of “D:/Micropython_Codes”.
+Move the program folder "Freenove_Ultimate_Starter_Kit_for_ESP8266/Python/Python_Codes" to disk(D) in advance with the path of "D:/Micropython_Codes".
 
-Open “Thonny”, click “This computer” -> “D:” -> “Micropython_Codes” -> “28.1_Station_mode” and double click “Station_mode.py”. 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "03.1_Station_mode" and double click "Station_mode.py". 
 
 Station_mode
 -------------------
@@ -59,14 +59,14 @@ Station_mode
 
 Because the names and passwords of routers in various places are different, before the Code runs, users need to enter the correct router’s name and password in the box as shown in the illustration above.
 
-After making sure the router name and password are entered correctly, compile and upload codes to ESP8266, wait for ESP8266 to connect to your router and print the IP address assigned by the router to ESP8266 in “Shell”. 
+After making sure the router name and password are entered correctly, compile and upload codes to ESP8266, wait for ESP8266 to connect to your router and print the IP address assigned by the router to ESP8266 in "Shell". 
 
 .. image:: ../_static/imgs/28_WiFi_Working_Modes/Chapter28_12.png
     :align: center
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/28.1_Station_mode/Station_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/03.1_Station_mode/Station_mode.py
     :linenos: 
     :language: python
     :lines: 1-22
@@ -74,7 +74,7 @@ The following is the program code:
 
 Import network module.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/28.1_Station_mode/Station_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/03.1_Station_mode/Station_mode.py
     :linenos: 
     :language: python
     :lines: 2-2
@@ -82,7 +82,7 @@ Import network module.
 
 Enter correct router name and password.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/28.1_Station_mode/Station_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/03.1_Station_mode/Station_mode.py
     :linenos: 
     :language: python
     :lines: 4-5
@@ -90,7 +90,7 @@ Enter correct router name and password.
 
 Set ESP8266 in Station mode.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/28.1_Station_mode/Station_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/03.1_Station_mode/Station_mode.py
     :linenos: 
     :language: python
     :lines: 9-9
@@ -98,7 +98,7 @@ Set ESP8266 in Station mode.
 
 Activate ESP8288's Station mode, initiate a connection request to the router and enter the password to connect.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/28.1_Station_mode/Station_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/03.1_Station_mode/Station_mode.py
     :linenos: 
     :language: python
     :lines: 12-13
@@ -106,15 +106,15 @@ Activate ESP8288's Station mode, initiate a connection request to the router and
 
 Wait for ESP8266 to connect to router until they connect to each other successfully.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/28.1_Station_mode/Station_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/03.1_Station_mode/Station_mode.py
     :linenos: 
     :language: python
     :lines: 14-15
     :dedent:
 
-Print the IP address assigned to ESP8266 in “Shell”.
+Print the IP address assigned to ESP8266 in "Shell".
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/28.1_Station_mode/Station_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/03.1_Station_mode/Station_mode.py
     :linenos: 
     :language: python
     :lines: 16-16
@@ -125,7 +125,7 @@ Reference
 
 .. py:function:: Class network	
     
-    Before each use of **network** , please add the statement “ **import network** ” to the top of the python file.
+    Before each use of **network** , please add the statement " **import network** " to the top of the python file.
     
     **WLAN(interface_id):** Set to WiFi mode.
     
@@ -175,7 +175,7 @@ Project AP mode
 Component List & Circuit
 ================================
 
-Component List & Circuit are the same as in Section 28.1.
+Component List & Circuit are the same as in Section 03.1.
 
 Component knowledge
 ================================
@@ -199,9 +199,9 @@ Connect Freenove ESP8266 to the computer using the USB cable.
 Code
 ====================
 
-Move the program folder “Freenove_Ultimate_Starter_Kit_for_ESP8266/Python/Python_Codes” to disk(D) in advance with the path of “D:/Micropython_Codes”.
+Move the program folder "Freenove_Ultimate_Starter_Kit_for_ESP8266/Python/Python_Codes" to disk(D) in advance with the path of "D:/Micropython_Codes".
 
-Open “Thonny”, click “This computer” -> “D:” -> “Micropython_Codes” -> “28.2_AP_mode”. and double click “AP_mode.py”. 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "03.2_AP_mode". and double click "AP_mode.py". 
 
 AP_mode
 ---------------------------
@@ -211,7 +211,7 @@ AP_mode
 
 Before the Code runs, you can make any changes to the AP name and password for ESP8266 in the box as shown in the illustration above. Of course, you can leave it alone by default.
 
-Click “Run current script”, open the AP function of ESP8266 and print the access point information. 
+Click "Run current script", open the AP function of ESP8266 and print the access point information. 
 
 .. image:: ../_static/imgs/28_WiFi_Working_Modes/Chapter28_14.png
     :align: center
@@ -223,7 +223,7 @@ Turn on the WiFi scanning function of your phone, and you can see the ssid_AP on
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/28.2_AP_mode/AP_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/03.2_AP_mode/AP_mode.py
     :linenos: 
     :language: python
     :lines: 1-25
@@ -231,7 +231,7 @@ The following is the program code:
 
 Import network module.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/28.2_AP_mode/AP_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/03.2_AP_mode/AP_mode.py
     :linenos: 
     :language: python
     :lines: 1-1
@@ -239,7 +239,7 @@ Import network module.
 
 Enter correct AP name and password.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/28.2_AP_mode/AP_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/03.2_AP_mode/AP_mode.py
     :linenos: 
     :language: python
     :lines: 3-4
@@ -247,7 +247,7 @@ Enter correct AP name and password.
 
 Set ESP8266 in AP mode.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/28.2_AP_mode/AP_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/03.2_AP_mode/AP_mode.py
     :linenos: 
     :language: python
     :lines: 11-11
@@ -255,7 +255,7 @@ Set ESP8266 in AP mode.
 
 Configure IP address, gateway and subnet mask for ESP8266.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/28.2_AP_mode/AP_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/03.2_AP_mode/AP_mode.py
     :linenos: 
     :language: python
     :lines: 14-14
@@ -263,7 +263,7 @@ Configure IP address, gateway and subnet mask for ESP8266.
 
 Turn on an AP in ESP8266, whose name is set by ssid_AP and password is set by password_AP.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/28.2_AP_mode/AP_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/03.2_AP_mode/AP_mode.py
     :linenos: 
     :language: python
     :lines: 16-17
@@ -271,7 +271,7 @@ Turn on an AP in ESP8266, whose name is set by ssid_AP and password is set by pa
 
 If the program is running abnormally, the AP disconnection function will be called. 
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/28.2_AP_mode/AP_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/03.2_AP_mode/AP_mode.py
     :linenos: 
     :language: python
     :lines: 25-25
@@ -282,7 +282,7 @@ Reference
 
 .. py:function:: Class network	
     
-    Before each use of **network** , please add the statement “ **import network** ” to the top of the python file.
+    Before each use of **network** , please add the statement " **import network** " to the top of the python file.
     
     **WLAN(interface_id):** Set to WiFi mode.
     
@@ -355,9 +355,9 @@ Connect Freenove ESP8266 to the computer using the USB cable.
 Code
 ==========================
 
-Move the program folder “Freenove_Ultimate_Starter_Kit_for_ESP8266/Python/Python_Codes” to disk(D) in advance with the path of “D:/Micropython_Codes”.
+Move the program folder "Freenove_Ultimate_Starter_Kit_for_ESP8266/Python/Python_Codes" to disk(D) in advance with the path of "D:/Micropython_Codes".
 
-Open “Thonny”, click “This computer” -> “D:” -> “Micropython_Codes” -> “28.3_AP+STA_mode”and double click “AP+STA_mode.py”. 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "03.3_AP+STA_mode"and double click "AP+STA_mode.py". 
 
 AP+STA_mode
 ---------------------------
@@ -365,9 +365,9 @@ AP+STA_mode
 .. image:: ../_static/imgs/28_WiFi_Working_Modes/Chapter28_16.png
     :align: center
 
-It is analogous to project 28.1 and project 28.2. Before running the Code, you need to modify ssidRouter, passwordRouter, ssidAP and passwordAP shown in the box of the illustration above.
+It is analogous to project 03.1 and project 03.2. Before running the Code, you need to modify ssidRouter, passwordRouter, ssidAP and passwordAP shown in the box of the illustration above.
 
-After making sure that the code is modified correctly, click “Run current script” and the “Shell” will display as follows:
+After making sure that the code is modified correctly, click "Run current script" and the "Shell" will display as follows:
 
 .. image:: ../_static/imgs/28_WiFi_Working_Modes/Chapter28_17.png
     :align: center
@@ -379,7 +379,7 @@ Turn on the WiFi scanning function of your phone, and you can see the ssidAP on 
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/28.3_AP+STA_mode/AP+STA_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/03.3_AP+STA_mode/AP+STA_mode.py
     :linenos: 
     :language: python
     :lines: 1-41

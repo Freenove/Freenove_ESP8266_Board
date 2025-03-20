@@ -64,7 +64,7 @@ When ESP8266 successfully connects to "ssid_Router", serial monitor will print o
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_28.1_WiFi_Station/Sketch_28.1_WiFi_Station.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_03.1_WiFi_Station/Sketch_03.1_WiFi_Station.ino
     :linenos: 
     :language: c
     :lines: 1-28
@@ -72,7 +72,7 @@ The following is the program code:
 
 Include the WiFi Library header file of ESP8266.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_28.1_WiFi_Station/Sketch_28.1_WiFi_Station.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_03.1_WiFi_Station/Sketch_03.1_WiFi_Station.ino
     :linenos: 
     :language: c
     :lines: 7-7
@@ -80,7 +80,7 @@ Include the WiFi Library header file of ESP8266.
 
 Enter correct router name and password.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_28.1_WiFi_Station/Sketch_28.1_WiFi_Station.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_03.1_WiFi_Station/Sketch_03.1_WiFi_Station.ino
     :linenos: 
     :language: c
     :lines: 9-10
@@ -88,7 +88,7 @@ Enter correct router name and password.
 
 Set ESP8266 in Station mode and connect it to your router.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_28.1_WiFi_Station/Sketch_28.1_WiFi_Station.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_03.1_WiFi_Station/Sketch_03.1_WiFi_Station.ino
     :linenos: 
     :language: c
     :lines: 16-16
@@ -96,7 +96,7 @@ Set ESP8266 in Station mode and connect it to your router.
 
 Check whether ESP8266 has connected to router successfully every 0.5s.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_28.1_WiFi_Station/Sketch_28.1_WiFi_Station.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_03.1_WiFi_Station/Sketch_03.1_WiFi_Station.ino
     :linenos: 
     :language: c
     :lines: 18-21
@@ -104,7 +104,7 @@ Check whether ESP8266 has connected to router successfully every 0.5s.
 
 Serial monitor prints out the IP address assigned to ESP8266
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_28.1_WiFi_Station/Sketch_28.1_WiFi_Station.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_03.1_WiFi_Station/Sketch_03.1_WiFi_Station.ino
     :linenos: 
     :language: c
     :lines: 23-23
@@ -153,7 +153,7 @@ Project AP mode
 Component List & Circuit
 ================================
 
-Component List & Circuit are the same as in Section 28.1.
+Component List & Circuit are the same as in Section 03.1.
 
 Component knowledge
 ================================
@@ -197,7 +197,7 @@ When observing the print information of the serial monitor, turn on the WiFi sca
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_28.2_WiFi_AP/Sketch_28.2_WiFi_AP.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_03.2_WiFi_AP/Sketch_03.2_WiFi_AP.ino
     :linenos: 
     :language: c
     :lines: 1-36
@@ -205,7 +205,7 @@ The following is the program code:
 
 Include WiFi Library header file of ESP8266. 
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_28.2_WiFi_AP/Sketch_28.2_WiFi_AP.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_03.2_WiFi_AP/Sketch_03.2_WiFi_AP.ino
     :linenos: 
     :language: c
     :lines: 7-7
@@ -213,7 +213,7 @@ Include WiFi Library header file of ESP8266.
 
 Enter correct AP name and password.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_28.2_WiFi_AP/Sketch_28.2_WiFi_AP.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_03.2_WiFi_AP/Sketch_03.2_WiFi_AP.ino
     :linenos: 
     :language: c
     :lines: 9-10
@@ -221,7 +221,7 @@ Enter correct AP name and password.
 
 Set ESP8266 in AP mode.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_28.2_WiFi_AP/Sketch_28.2_WiFi_AP.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_03.2_WiFi_AP/Sketch_03.2_WiFi_AP.ino
     :linenos: 
     :language: c
     :lines: 21-21
@@ -241,7 +241,7 @@ Turn on an AP in ESP8266, whose name is set by ssid_AP and password is set by pa
 
 Check whether the AP is turned on successfully. If yes, print out IP and MAC address of AP established by ESP8266. If no, print out the failure prompt. 
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_28.2_WiFi_AP/Sketch_28.2_WiFi_AP.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_03.2_WiFi_AP/Sketch_03.2_WiFi_AP.ino
     :linenos: 
     :language: c
     :lines: 25-32
@@ -333,7 +333,7 @@ When observing the print information of the serial monitor, turn on the WiFi sca
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_28.3_AP_Station/Sketch_28.3_AP_Station.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_03.3_AP_Station/Sketch_03.3_AP_Station.ino
     :linenos: 
     :language: c
     :lines: 1-42

@@ -59,7 +59,7 @@ Code
 
 Move the program folder "Freenove_Ultimate_Starter_Kit_for_ESP8266/Python/Python_Codes" to disk(D) in advance with the path of "D:/Micropython_Codes".
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "08.1_Serial_Print" and double "Serial_Print.py". 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "02.1_Serial_Print" and double "Serial_Print.py". 
 
 Serial_Print
 ----------------------------
@@ -74,7 +74,7 @@ Click "Run current script" and observe the changes of "Shell", which will displa
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/08.1_Serial_Print/Serial_Print.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/02.1_Serial_Print/Serial_Print.py
     :linenos: 
     :language: python
     :lines: 1-7
@@ -143,9 +143,9 @@ Component and Circuit are the same as in the previous project.
 Code
 ===================
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "08.2_Serial_Read_and_Write" and double click "Serial_Read_and_Write.py". 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "02.2_Serial_Read_and_Write" and double click "Serial_Read_and_Write.py". 
 
-08.2_Serial_Read_and_Write
+02.2_Serial_Read_and_Write
 --------------------------------
 
 .. image:: ../_static/imgs/8_Serial_Communication/Chapter08_16.png
@@ -158,7 +158,7 @@ Click "Run current script" and ESP8266 will print out data at "Shell" and wait f
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/08.2_Serial_Read_and_Write/Serial_Read_and_Write.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/02.2_Serial_Read_and_Write/Serial_Read_and_Write.py
     :linenos: 
     :language: python
     :lines: 1-5

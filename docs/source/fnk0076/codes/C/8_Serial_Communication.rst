@@ -104,7 +104,7 @@ As shown in the image above, "ESP8266 initialization completed! " The previous i
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_08.1_SerialPrinter/Sketch_08.1_SerialPrinter.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_02.1_SerialPrinter/Sketch_02.1_SerialPrinter.ino
     :linenos: 
     :language: c
     :lines: 1-16
@@ -157,7 +157,7 @@ Then type characters like 'ABCDEG' into the data sent at the top and click the S
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_08.1_SerialPrinter/Sketch_08.1_SerialPrinter.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_02.1_SerialPrinter/Sketch_02.1_SerialPrinter.ino
     :linenos: 
     :language: c
     :lines: 1-30

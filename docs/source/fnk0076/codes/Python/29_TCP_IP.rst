@@ -67,7 +67,7 @@ Unzip the downloaded file to your computer. Click "processing.exe" as the figure
 Use Server mode for communication
 --------------------------------------
 
-Open the "Freenove_Ultimate_Starter_Kit_for_ESP8266\\C\\Sketches\\Sketch_29.1_WiFiClient\\sketchWiFi\sketchWiFi.pde", and click "Run".
+Open the "Freenove_Ultimate_Starter_Kit_for_ESP8266\\C\\Sketches\\Sketch_04.1_WiFiClient\\sketchWiFi\sketchWiFi.pde", and click "Run".
 
 .. image:: ../_static/imgs/29_TCP_IP/Chapter29_04.png
     :align: center
@@ -115,7 +115,7 @@ Connect Freenove ESP8266 to the computer using USB cable.
 Code
 ===========================
 
-If you have not installed “ControlP5”, please follow the following steps to continue the installation, if you have installed, please skip this section.
+If you have not installed "ControlP5", please follow the following steps to continue the installation, if you have installed, please skip this section.
 
 Open Processing.
 
@@ -132,36 +132,36 @@ Select Libraries in the pop-up window.
 .. image:: ../_static/imgs/29_TCP_IP/Chapter29_24.png
     :align: center
 
-Input “ControlP5” in the searching box, and then select the option as below. Click “Install” and wait for the installation to finish.
+Input "ControlP5" in the searching box, and then select the option as below. Click "Install" and wait for the installation to finish.
 
 You can also click Add Library under 'Import Library' under 'Sketch'. 
 
 .. image:: ../_static/imgs/29_TCP_IP/Chapter29_25.png
     :align: center
 
-Before running the Code, please open “sketchWiFi.pde.” first, and click “Run”.
+Before running the Code, please open "sketchWiFi.pde." first, and click "Run".
 
 .. image:: ../_static/imgs/29_TCP_IP/Chapter29_26.png
     :align: center
 
-The newly pop up window will use the computer's IP address by default and open a data monitor port. Click“Listening”.
+The newly pop up window will use the computer's IP address by default and open a data monitor port. Click"Listening".
 
 .. image:: ../_static/imgs/29_TCP_IP/Chapter29_27.png
     :align: center
 
-Move the program folder “Freenove_Ultimate_Starter_Kit_for_ESP8266/Python/Python_Codes” to disk(D) in advance with the path of “D:/Micropython_Codes”.
+Move the program folder "Freenove_Ultimate_Starter_Kit_for_ESP8266/Python/Python_Codes" to disk(D) in advance with the path of "D:/Micropython_Codes".
 
-Open “Thonny”, click “This computer” -> “D:” -> “Micropython_Codes” -> “29.1_TCP_as_Client” and double click “TCP_as_Client.py”. 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "04.1_TCP_as_Client" and double click "TCP_as_Client.py". 
 
-Before clicking “Run current script”, please modify the name and password of your router and fill in the “host” and “port” according to the IP information in processing app shown in the box below:
+Before clicking "Run current script", please modify the name and password of your router and fill in the "host" and "port" according to the IP information in processing app shown in the box below:
 
-29.1_TCP_as_Client
+04.1_TCP_as_Client
 --------------------------
 
 .. image:: ../_static/imgs/29_TCP_IP/Chapter29_28.png
     :align: center
 
-Click “Run current script” and in “Shell”, you can see ESP8266 automatically connects to sketchWiFi.  
+Click "Run current script" and in "Shell", you can see ESP8266 automatically connects to sketchWiFi.  
 
 .. image:: ../_static/imgs/29_TCP_IP/Chapter29_29.png
     :align: center
@@ -169,7 +169,7 @@ Click “Run current script” and in “Shell”, you can see ESP8266 automatic
 .. image:: ../_static/imgs/29_TCP_IP/Chapter29_30.png
     :align: center
 
-If you don't click “Listening” for sketchWiFi, ESP8266 will fail to connect and will print information as follows:
+If you don't click "Listening" for sketchWiFi, ESP8266 will fail to connect and will print information as follows:
 
 .. image:: ../_static/imgs/29_TCP_IP/Chapter29_31.png
     :align: center
@@ -181,7 +181,7 @@ ESP8266 connects with TCP SERVER, and TCP SERVER receives messages from ESP8266,
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.1_TCP_as_Client/TCP_as_Client.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/04.1_TCP_as_Client/TCP_as_Client.py
     :linenos: 
     :language: python
     :lines: 1-43
@@ -189,7 +189,7 @@ The following is the program code:
 
 Import network、socket、time modules.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.1_TCP_as_Client/TCP_as_Client.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/04.1_TCP_as_Client/TCP_as_Client.py
     :linenos: 
     :language: python
     :lines: 1-3
@@ -197,7 +197,7 @@ Import network、socket、time modules.
 
 Enter the actual router name, password, remote server IP address, and port number.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.1_TCP_as_Client/TCP_as_Client.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/04.1_TCP_as_Client/TCP_as_Client.py
     :linenos: 
     :language: python
     :lines: 5-8
@@ -205,7 +205,7 @@ Enter the actual router name, password, remote server IP address, and port numbe
 
 Connect specified Router until it is successful. 
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.1_TCP_as_Client/TCP_as_Client.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/04.1_TCP_as_Client/TCP_as_Client.py
     :linenos: 
     :language: python
     :lines: 13-21
@@ -213,7 +213,7 @@ Connect specified Router until it is successful.
 
 Connect router and then connect it to remote server.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.1_TCP_as_Client/TCP_as_Client.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/04.1_TCP_as_Client/TCP_as_Client.py
     :linenos: 
     :language: python
     :lines: 23-27
@@ -221,7 +221,7 @@ Connect router and then connect it to remote server.
 
 Send messages to the remote server, receive the messages from it and print them out, and then send the messages back to the server.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.1_TCP_as_Client/TCP_as_Client.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/04.1_TCP_as_Client/TCP_as_Client.py
     :linenos: 
     :language: python
     :lines: 28-37
@@ -229,7 +229,7 @@ Send messages to the remote server, receive the messages from it and print them 
 
 If an exception occurs in the program, for example, the remote server is shut down, execute the following program, turn off the socket function, and disconnect the WiFi.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.1_TCP_as_Client/TCP_as_Client.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/04.1_TCP_as_Client/TCP_as_Client.py
     :linenos: 
     :language: python
     :lines: 39-43
@@ -240,7 +240,7 @@ Reference
 
 .. py:function:: Class socket	
     
-    Before each use of **socket** , please add the statement “ **import socket** ” to the top of the python file.
+    Before each use of **socket** , please add the statement " **import socket** " to the top of the python file.
     
     **socket([af, type, proto]):** Create a socket.
     
@@ -319,11 +319,11 @@ Connect Freenove ESP8266 to the computer using USB cable.
 Sketch
 ======================
 
-Move the program folder “Freenove_Ultimate_Starter_Kit_for_ESP8266/Python/Python_Codes” to disk(D) in advance with the path of “D:/Micropython_Codes”.
+Move the program folder "Freenove_Ultimate_Starter_Kit_for_ESP8266/Python/Python_Codes" to disk(D) in advance with the path of "D:/Micropython_Codes".
 
-Open “Thonny”, click “This computer” -> “D:” -> “Micropython_Codes” -> “29.2_TCP_as_Server” and double click “TCP_as_Server.py”. 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "04.2_TCP_as_Server" and double click "TCP_as_Server.py". 
 
-Before clicking “Run current script”, please modify the name and password of your router shown in the box below.
+Before clicking "Run current script", please modify the name and password of your router shown in the box below.
 
 TCP_as_Server
 -----------------------
@@ -331,23 +331,23 @@ TCP_as_Server
 .. image:: ../_static/imgs/29_TCP_IP/Chapter29_33.png
     :align: center
 
-After making sure that the router's name and password are correct, click “Run current script” and in “Shell”, you can see a server opened by the ESP8266 waiting to connecting to other network devices.
+After making sure that the router's name and password are correct, click "Run current script" and in "Shell", you can see a server opened by the ESP8266 waiting to connecting to other network devices.
 
 .. image:: ../_static/imgs/29_TCP_IP/Chapter29_34.png
     :align: center
 
 Processing:
 
-Open the “ **Freenove_Ultimate_Starter_Kit_for_ESP8266/Codes/MicroPython_Codes/29.2_TCP_as_Server/**
+Open the " **Freenove_Ultimate_Starter_Kit_for_ESP8266/Codes/MicroPython_Codes/04.2_TCP_as_Server/**
 
-**sketchWiFi/sketchWiFi.pde”.**
+**sketchWiFi/sketchWiFi.pde".**
 
 Based on the message printed in "Shell", enter the correct IP address and port when processing, and click to establish a connection with ESP8266 to communicate. 
 
 .. image:: ../_static/imgs/29_TCP_IP/Chapter29_35.png
     :align: center
 
-You can enter any information in the “Send Box” of sketchWiFi. Click “Send” and ESP8266 will print the received messages to “Shell” and send them back to sketchWiFi.
+You can enter any information in the "Send Box" of sketchWiFi. Click "Send" and ESP8266 will print the received messages to "Shell" and send them back to sketchWiFi.
 
 .. image:: ../_static/imgs/29_TCP_IP/Chapter29_36.png
     :align: center
@@ -357,7 +357,7 @@ You can enter any information in the “Send Box” of sketchWiFi. Click “Send
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.2_TCP_as_Server/TCP_as_Server.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/04.2_TCP_as_Server/TCP_as_Server.py
     :linenos: 
     :language: python
     :lines: 1-52
@@ -365,7 +365,7 @@ The following is the program code:
 
 Call function connectWifi() to connect to router and obtain the dynamic IP that it assigns to ESP8266.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.2_TCP_as_Server/TCP_as_Server.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/04.2_TCP_as_Server/TCP_as_Server.py
     :linenos: 
     :language: python
     :lines: 22-23
@@ -373,7 +373,7 @@ Call function connectWifi() to connect to router and obtain the dynamic IP that 
 
 Open the socket server, bind the server to the dynamic IP, and open a data monitoring port.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.2_TCP_as_Server/TCP_as_Server.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/04.2_TCP_as_Server/TCP_as_Server.py
     :linenos: 
     :language: python
     :lines: 24-27
@@ -381,15 +381,15 @@ Open the socket server, bind the server to the dynamic IP, and open a data monit
 
 Print the server's IP address and port, monitor the port and wait for the connection of other network devices.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.2_TCP_as_Server/TCP_as_Server.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/04.2_TCP_as_Server/TCP_as_Server.py
     :linenos: 
     :language: python
     :lines: 29-34
     :dedent:
 
-Each time receiving data, print them in “Shell” and send them back to the client.
+Each time receiving data, print them in "Shell" and send them back to the client.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.2_TCP_as_Server/TCP_as_Server.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/04.2_TCP_as_Server/TCP_as_Server.py
     :linenos: 
     :language: python
     :lines: 36-46
@@ -397,7 +397,7 @@ Each time receiving data, print them in “Shell” and send them back to the cl
 
 If the client is disconnected, close the server and disconnect WiFi.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.2_TCP_as_Server/TCP_as_Server.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/04.2_TCP_as_Server/TCP_as_Server.py
     :linenos: 
     :language: python
     :lines: 47-52
