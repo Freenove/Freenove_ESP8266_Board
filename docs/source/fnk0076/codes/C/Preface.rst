@@ -37,8 +37,9 @@ The hardware interfaces of ESP8266 are distributed as follows:
 Compare the left and right images. We've boxed off the resources on the ESP8266 in different colors to facilitate your understanding of the ESP8266 development board.
 
 .. list-table:: 
-   :width: 100%
    :align: center
+   :class: table-line
+   :header-rows: 1
 
    * -  Box color 
      -  Corresponding resources introduction
@@ -60,51 +61,59 @@ Compare the left and right images. We've boxed off the resources on the ESP8266 
 .. |Preface05| image:: ../_static/imgs/Preface/Preface05.png
 .. |Preface06| image:: ../_static/imgs/Preface/Preface06.png
 
-+-----+----------+-----------------------------------------------------------------------+
-| NO. | Pin Name | Functional Description                                                |
-+-----+----------+-----------------------------------------------------------------------+
-| 1   | RST      | Reset Pin, Active Low                                                 |
-+-----+----------+-----------------------------------------------------------------------+
-| 2   | ADC      | AD conversion, Input voltage range 0~3.3V, the value range is 0~1024. |
-+-----+----------+-----------------------------------------------------------------------+
-| 3   | EN       | Chip Enabled Pin, Active High                                         |
-+-----+----------+-----------------------------------------------------------------------+
-| 4   | IO16     | Connect with RST pin to wake up Deep Slee                             |
-+-----+----------+-----------------------------------------------------------------------+
-| 5   | IO14     | GPIO14; HSPI_CLK                                                      |
-+-----+----------+-----------------------------------------------------------------------+
-| 6   | IO12     | GPIO12; HSPI_MISO                                                     |
-+-----+----------+-----------------------------------------------------------------------+
-| 7   | IO13     | GPIO13; HSPI_MOSI; UART0_CTS                                          |
-+-----+----------+-----------------------------------------------------------------------+
-| 8   | VCC      | Module power supply pin, Voltage 3.0V ~ 3.6V                          |
-+-----+----------+-----------------------------------------------------------------------+
-| 9   | GND      | GND                                                                   |
-+-----+----------+-----------------------------------------------------------------------+
-| 10  | IO15     | GPIO15; MTDO; HSPICS; UART0                                           |
-+-----+----------+-----------------------------------------------------------------------+
-| 11  | IO2      | GPIO2; UART1_TXD                                                      |
-+-----+----------+-----------------------------------------------------------------------+
-| 12  | IO0      | GPIO0; UART1_RXD                                                      |
-+-----+----------+-----------------------------------------------------------------------+
-| 13  | IO4      | GPIO4                                                                 |
-+-----+----------+-----------------------------------------------------------------------+
-| 14  | IO5      | GPIO5;IR_R                                                            |
-+-----+----------+-----------------------------------------------------------------------+
-| 15  | RXD      | UART0_RXD; GPIO3                                                      |
-+-----+----------+-----------------------------------------------------------------------+
-| 16  | TXD      | UART0_TXD; GPIO1                                                      |
-+-----+----------+-----------------------------------------------------------------------+
+.. table::
+    :align: center
+    :class: zebra
+    
+    +-----+----------+-----------------------------------------------------------------------+
+    | NO. | Pin Name | Functional Description                                                |
+    +=====+==========+=======================================================================+
+    | 1   | RST      | Reset Pin, Active Low                                                 |
+    +-----+----------+-----------------------------------------------------------------------+
+    | 2   | ADC      | AD conversion, Input voltage range 0~3.3V, the value range is 0~1024. |
+    +-----+----------+-----------------------------------------------------------------------+
+    | 3   | EN       | Chip Enabled Pin, Active High                                         |
+    +-----+----------+-----------------------------------------------------------------------+
+    | 4   | IO16     | Connect with RST pin to wake up Deep Slee                             |
+    +-----+----------+-----------------------------------------------------------------------+
+    | 5   | IO14     | GPIO14; HSPI_CLK                                                      |
+    +-----+----------+-----------------------------------------------------------------------+
+    | 6   | IO12     | GPIO12; HSPI_MISO                                                     |
+    +-----+----------+-----------------------------------------------------------------------+
+    | 7   | IO13     | GPIO13; HSPI_MOSI; UART0_CTS                                          |
+    +-----+----------+-----------------------------------------------------------------------+
+    | 8   | VCC      | Module power supply pin, Voltage 3.0V ~ 3.6V                          |
+    +-----+----------+-----------------------------------------------------------------------+
+    | 9   | GND      | GND                                                                   |
+    +-----+----------+-----------------------------------------------------------------------+
+    | 10  | IO15     | GPIO15; MTDO; HSPICS; UART0                                           |
+    +-----+----------+-----------------------------------------------------------------------+
+    | 11  | IO2      | GPIO2; UART1_TXD                                                      |
+    +-----+----------+-----------------------------------------------------------------------+
+    | 12  | IO0      | GPIO0; UART1_RXD                                                      |
+    +-----+----------+-----------------------------------------------------------------------+
+    | 13  | IO4      | GPIO4                                                                 |
+    +-----+----------+-----------------------------------------------------------------------+
+    | 14  | IO5      | GPIO5;IR_R                                                            |
+    +-----+----------+-----------------------------------------------------------------------+
+    | 15  | RXD      | UART0_RXD; GPIO3                                                      |
+    +-----+----------+-----------------------------------------------------------------------+
+    | 16  | TXD      | UART0_TXD; GPIO1                                                      |
+    +-----+----------+-----------------------------------------------------------------------+
 
 Description of the ESP8266 series module boot mode:
 
-+---------------+-----------+------+--------+-------+-------+------+
-| Mode          | CH_PD(EN) | RST  | GPIO15 | GPIO0 | GPIO2 | TXD0 |
-+---------------+-----------+------+--------+-------+-------+------+
-| Download mode | high      | high | low    | low   | high  | high |
-+---------------+-----------+------+--------+-------+-------+------+
-| Running mode  | high      | high | low    | high  | high  | high |
-+---------------+-----------+------+--------+-------+-------+------+
+.. table::
+    :align: center
+    :class: zebra
+    
+    +---------------+-----------+------+--------+-------+-------+------+
+    | Mode          | CH_PD(EN) | RST  | GPIO15 | GPIO0 | GPIO2 | TXD0 |
+    +===============+===========+======+========+=======+=======+======+
+    | Download mode | high      | high | low    | low   | high  | high |
+    +---------------+-----------+------+--------+-------+-------+------+
+    | Running mode  | high      | high | low    | high  | high  | high |
+    +---------------+-----------+------+--------+-------+-------+------+
 
 Notes: Some of the pins inside the module have been pulled or pulled down.
 
@@ -125,17 +134,17 @@ Windows
 Check whether CH340 has been installed
 ---------------------------------------------
 
-1.	Connect your computer and ESP8266 with a USB cable.
+1. Connect your computer and ESP8266 with a USB cable.
 
 .. image:: ../_static/imgs/Preface/Preface07.png
     :align: center
 
-2.	Turn to the main interface of your computer, select "This PC" and right-click to select "Manage".
+2. Turn to the main interface of your computer, select "This PC" and right-click to select "Manage".
 
 .. image:: ../_static/imgs/Preface/Preface08.png
     :align: center
 
-3.	Click "Device Manager". If your computer has installed CH340, you can see"USB-SERIAL CH340 (COMx)". And you can click :ref:`here <programming>` to move to the next step.
+3. Click "Device Manager". If your computer has installed CH340, you can see"USB-SERIAL CH340 (COMx)". And you can click :ref:`here <programming>` to move to the next step.
 
 .. image:: ../_static/imgs/Preface/Preface09.png
     :align: center
@@ -143,7 +152,7 @@ Check whether CH340 has been installed
 Installing CH340
 -------------------------------
 
-1.	First, download CH340 driver, click http://www.wch-ic.com/search?q=CH340&t=downloads to download the appropriate one based on 
+1. First, download CH340 driver, click http://www.wch-ic.com/search?q=CH340&t=downloads to download the appropriate one based on 
 
 your operating system.
 
@@ -233,76 +242,64 @@ Programming Software
 
 Arduino Software (IDE) is used to write and upload the code for Arduino Board.
 
-First, install Arduino Software (IDE): visit https://www.arduino.cc, click "Download" to enter the download page.
+First, install Arduino Software (IDE): visit https://www.arduino.cc/en/software/
 
-.. image:: ../_static/imgs/Preface/Preface24.png
+.. image:: ../_static/imgs/ArduinoIDE/Preface03.png
     :align: center
-  
-Select and download corresponding installer according to your operating system. If you are a windows user, please select the "Windows Installer" to download to install the driver correctly.
+    :width: 99%
+    :class: image-border
 
-.. image:: ../_static/imgs/Preface/Preface25.png
-    :align: center
-  
-After the download completes, run the installer. For Windows users, there may pop up an installation dialog box of driver during the installation process. When it popes up, please allow the installation.
+Select and download corresponding installer based on your operating system. If you are a Windows user, please select the "Windows" to download and install the driver correctly.
 
-After installation is complete, an Arduino Software shortcut will be generated in the desktop. Run the Arduino Software.
-
-.. image:: ../_static/imgs/Preface/Preface26.png
-    :align: center
-  
-The interface of Arduino Software is as follows:
-
-.. image:: ../_static/imgs/Preface/Preface27.png
+.. image:: ../_static/imgs/ArduinoIDE/Preface04.png
     :align: center
 
-Programs written with Arduino Software (IDE) are called sketches. These sketches are written in the text editor and saved with the file extension.ino. The editor has features for cutting/pasting and searching/replacing text. The message area gives feedback while saving and exporting and also displays errors. The console displays text output by the Arduino Software (IDE), including complete error messages and other information. The bottom right-hand corner of the window displays the configured board and serial port. The toolbar buttons allow you to verify and upload programs, create, open, and save sketches, and open the serial monitor.
+After the downloading completes, run the installer. For Windows users, there may pop up an installation dialog box of driver during the installation process. When it is popped up, please allow the installation.
 
-.. list-table:: 
-   :width: 100%
-   :align: center
+After installation is completed, an shortcut will be generated in the desktop.
 
-   * -  |Preface28|
-     -  Verify 
-        
-        Check your code for compile errors . 
+.. image:: ../_static/imgs/ArduinoIDE/Preface05.png
+    :align: center
 
-   * -  |Preface29|
-     -  Upload 
-        
-        Compile your code and upload them to the configured board. 
+Run it. The interface of the software is as follows:
 
-   * -  |Preface30|
-     -  New 
-        
-        Create a new sketch. 
+.. image:: ../_static/imgs/ArduinoIDE/Preface06.png
+    :align: center
 
-   * -  |Preface31|
-     -  Open 
-        
-        Present a menu of all the sketches in your sketchbook. 
-        
-        Clicking one will open it within the current window and overwrite its content.
+Programs written with Arduino IDE are called sketches. These sketches are written in a text editor and are saved with the file extension.ino. The editor has features for cutting/pasting and for searching/replacing text. The console displays text output by the Arduino IDE, including complete error messages and other information. The bottom right-hand corner of the window displays the configured board and serial port. The toolbar buttons allow you to verify and upload programs, open the serial monitor, and access the serial plotter.
 
-   * -  |Preface32|
-     -  Save 
-        
-        Save your sketch. 
+.. table::
+    :align: center
+    :class: table-line
+    :width: 80%
+    
+    +-------------+---------------------------------------------------------------------+
+    | |Preface07| | Verify                                                              |
+    |             |                                                                     |
+    |             | Checks your code for errors compiling it.                           |
+    +-------------+---------------------------------------------------------------------+
+    | |Preface08| | Upload                                                              |
+    |             |                                                                     |
+    |             | Compiles your code and uploads it to the configured board.          |
+    +-------------+---------------------------------------------------------------------+
+    | |Preface09| | Debug                                                               |
+    |             |                                                                     |
+    |             | Troubleshoot code errors and monitor program running status.        |
+    +-------------+---------------------------------------------------------------------+
+    | |Preface10| | Serial Plotter                                                      |
+    |             |                                                                     |
+    |             | Real-time plotting of serial port data charts.                      |
+    +-------------+---------------------------------------------------------------------+
+    | |Preface11| | Serial Monitor                                                      |
+    |             |                                                                     |
+    |             | Used for debugging and communication between devices and computers. |
+    +-------------+---------------------------------------------------------------------+
 
-   * -  |Preface33|
-     -  Serial Monitor 
-        
-        Open the serial monitor. 
-
-.. |Preface28| image:: ../_static/imgs/Preface/Preface28.png
-.. |Preface29| image:: ../_static/imgs/Preface/Preface29.png
-.. |Preface30| image:: ../_static/imgs/Preface/Preface30.png
-.. |Preface31| image:: ../_static/imgs/Preface/Preface31.png
-.. |Preface32| image:: ../_static/imgs/Preface/Preface32.png
-.. |Preface33| image:: ../_static/imgs/Preface/Preface33.png
-
-Additional commands are found within the five menus: File, Edit, Sketch, Tools, Help. 
-
-The menus are context sensitive, which means only those items relevant to the work currently being carried out are available.
+.. |Preface07| image:: ../_static/imgs/ArduinoIDE/Preface07.png
+.. |Preface08| image:: ../_static/imgs/ArduinoIDE/Preface08.png
+.. |Preface09| image:: ../_static/imgs/ArduinoIDE/Preface09.png
+.. |Preface10| image:: ../_static/imgs/ArduinoIDE/Preface10.png
+.. |Preface11| image:: ../_static/imgs/ArduinoIDE/Preface11.png
 
 Environment Configuration
 ***********************************

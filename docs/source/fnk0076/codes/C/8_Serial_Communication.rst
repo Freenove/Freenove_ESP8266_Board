@@ -1,10 +1,10 @@
 ##############################################################################
-Chapter Serial Communication
+Chapter 2 Serial Communication
 ##############################################################################
 
 Serial Communication is a means of communication between different devices/devices. This section describes ESP8266's Serial Communication.
 
-Project Serial Print
+Project 2.1 Serial Print
 ***********************************
 
 This project uses ESP8266's serial communicator to send data to the computer and print it on the serial monitor.
@@ -13,8 +13,9 @@ Component List
 ==========================
 
 .. list-table:: 
-   :width: 100%
+   :width: 80%
    :align: center
+   :class: table-line
 
    * -  ESP8266 x1
      -  USB cable
@@ -129,7 +130,7 @@ Reference
 
     Returns the number of milliseconds since the current system was booted.
 
-Project Serial Read and Write
+Project 2.2 Serial Read and Write
 **************************************
 
 From last section, we use serial port on Freenove ESP8266 to send data to a computer, now we will use that to receive data from computer.
@@ -139,7 +140,7 @@ Component and circuit are the same as in the previous project.
 Sketch
 =================================
 
-Sketch_SerialRW
+Sketch_02.2_SerialRW
 -----------------------------
 
 .. image:: ../_static/imgs/8_Serial_Communication/Chapter08_11.png
@@ -157,7 +158,7 @@ Then type characters like 'ABCDEG' into the data sent at the top and click the S
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_02.1_SerialPrinter/Sketch_02.1_SerialPrinter.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_02.2_SerialRW/Sketch_02.2_SerialRW.ino
     :linenos: 
     :language: c
     :lines: 1-30
